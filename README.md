@@ -30,4 +30,4 @@ Tipsy est une application iOS simple, rapide et élégante qui permet de calcule
 
 1. Clonez ce dépôt sur votre machine locale :
    ```bash
-   git clone [https://github.com/elarbi-allam/Tipsy.git][https://github.com/elarbi-allam/Tipsy.git]
+   git clone https://github.com/elarbi-allam/Tipsy.git
