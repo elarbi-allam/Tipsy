@@ -13,7 +13,9 @@ Tipsy est une application iOS simple, rapide et élégante qui permet de calcule
 
 | Écran Principal | Écran de Résultat |
 | :---: | :---: |
-| <img src="URL_DE_IMAGE_1" width="250"> | <img src="URL_DE_IMAGE_2" width="250"> |
+|  <img width="366" height="763" alt="URL_DE_IMAGE_1" src="https://github.com/user-attachments/assets/b8448a69-7482-4198-8d43-3ed323af73a0" />
+|  <img width="361" height="759" alt="URL_DE_IMAGE_2" src="https://github.com/user-attachments/assets/b0eb65e2-5e50-40a8-9d20-b5b0346a3e0a" />
+|
 
 ## 🛠 Technologies utilisées
 
