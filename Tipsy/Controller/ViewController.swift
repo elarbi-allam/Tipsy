@@ -4,7 +4,8 @@ class ViewController: UIViewController {
     
     var splitterBrain = SplitterBrain()
 
-    @IBOutlet weak var billTextFiel: UITextField!
+
+    @IBOutlet weak var billTextField: UITextField!
     @IBOutlet var tipButtons: [UIButton]!
     @IBOutlet weak var numberOfPeople: UILabel!
     
@@ -12,12 +13,7 @@ class ViewController: UIViewController {
     @IBAction func tipButtonsClicked(_ sender: UIButton) {
         
         for button in tipButtons {
-            if button == sender {
-                button.isSelected = true
-                
-            } else {
-                button.isSelected = false
-            }
+            button.isSelected = (button == sender)
         }
     }
     @IBAction func stepperClicked(_ sender: UIStepper) {
@@ -30,12 +26,12 @@ class ViewController: UIViewController {
                 let buttonTitle = button.titleLabel?.text ?? "0%"
                 let titleWithoutPercent = String(buttonTitle.dropLast())
                 let tipAsNumber = (Double(titleWithoutPercent) ?? 0.0) / 100.0
-                splitterBrain.setTipPercentage(tipAsNumber)
+                splitterBrain.tipPercentage = tipAsNumber
             }
         }
         
-        splitterBrain.setNumberOfPeople(Int(numberOfPeople.text!)!)
-        splitterBrain.setBill(Double(billTextFiel.text ?? "0") ?? 0.0)
+        splitterBrain.numberOfPeople = Int(numberOfPeople.text!)!
+        splitterBrain.bill = Double(billTextField.text ?? "0") ?? 0.0
         
         self.performSegue(withIdentifier: "goToResult", sender: self)
         

@@ -148,7 +148,7 @@
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="e.g. 123.56" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wcN-ka-Q4F">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="e.g. 123.56" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wcN-ka-Q4F" userLabel="Bill Text Field">
                                         <rect key="frame" x="0.0" y="56" width="393" height="48"/>
                                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -200,7 +200,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="billTextFiel" destination="wcN-ka-Q4F" id="oPi-Y6-d5T"/>
+                        <outlet property="billTextField" destination="wcN-ka-Q4F" id="tyY-cN-hgk"/>
                         <outlet property="numberOfPeople" destination="bSy-Yc-886" id="YM4-lQ-NYx"/>
                         <outletCollection property="tipButtons" destination="XzR-0E-Xf7" collectionClass="NSMutableArray" id="DYp-qs-oWe"/>
                         <outletCollection property="tipButtons" destination="7y6-Kf-yF0" collectionClass="NSMutableArray" id="Cij-kg-WSN"/>
@@ -295,8 +295,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="billTextField" destination="uLJ-ii-hft" id="jVl-dO-WD9"/>
-                        <outlet property="detailsTextField" destination="HGt-bn-sCv" id="Gdl-vB-0ve"/>
+                        <outlet property="billLabel" destination="uLJ-ii-hft" id="jVl-dO-WD9"/>
+                        <outlet property="detailsLabel" destination="HGt-bn-sCv" id="Gdl-vB-0ve"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLi-Eb-NGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
